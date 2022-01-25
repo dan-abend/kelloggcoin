@@ -20,6 +20,7 @@ blockchain = [
 # Write code below that returns the number of KelloggCoin that each user has in their 
 # KelloggCoin "wallet".
 
+
 # It should print out:
 # Ben's KelloggCoin balance is 14000
 # Brian's KelloggCoin balance is 13000
@@ -27,3 +28,13 @@ blockchain = [
 # Anthony's KelloggCoin balance is 2650
 
 # 👇👇👇 Your code HERE 👇👇👇
+
+Ben_wallet = blockchain[0][:amount]-blockchain[2][:amount]-blockchain[5][:amount]+blockchain[6][:amount]
+Brian_wallet = blockchain[1][:amount]-blockchain[3][:amount]
+Evan_wallet = blockchain[2][:amount]-blockchain[4][:amount]+blockchain[7][:amount]
+Anthony_wallet = blockchain[3][:amount]+blockchain[4][:amount]+blockchain[5][:amount]-blockchain[6][:amount]-blockchain[7][:amount]
+
+puts "Ben's KelloggCoin balance is #{Ben_wallet}"
+puts "Brian's KelloggCoin balance is #{Brian_wallet}"
+puts "Evan's KelloggCoin balance is #{Evan_wallet}"
+puts "Anthony's KelloggCoin balance is #{Anthony_wallet}"
